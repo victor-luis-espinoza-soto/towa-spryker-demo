@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b35c60e70a0d81634e4a29bafefa424",
+    "content-hash": "a35ad6406ade0a56a7b5211e2df2141f",
     "packages": [
         {
             "name": "async-aws/core",
@@ -1460,16 +1460,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "b635f279edd83fc275f822a1188157ffea568ff6"
+                "reference": "8bd7c33a0734ae1c5d074360512beb716bef3f77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/b635f279edd83fc275f822a1188157ffea568ff6",
-                "reference": "b635f279edd83fc275f822a1188157ffea568ff6",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/8bd7c33a0734ae1c5d074360512beb716bef3f77",
+                "reference": "8bd7c33a0734ae1c5d074360512beb716bef3f77",
                 "shasum": ""
             },
             "require": {
@@ -1556,7 +1556,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.5.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.6.0"
             },
             "funding": [
                 {
@@ -1572,7 +1572,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-17T16:11:26+00:00"
+            "time": "2023-08-03T15:06:02+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -6016,6 +6016,50 @@
             "time": "2023-07-26T14:51:09+00:00"
         },
         {
+            "name": "spryker-feature/order-threshold",
+            "version": "202009.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-feature/order-threshold.git",
+                "reference": "ced4a8da5dee03944a2046cc09082e453b425427"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-feature/order-threshold/zipball/ced4a8da5dee03944a2046cc09082e453b425427",
+                "reference": "ced4a8da5dee03944a2046cc09082e453b425427",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker-shop/sales-order-threshold-widget": "^1.1.0",
+                "spryker/sales-order-threshold": "^1.4.0",
+                "spryker/sales-order-threshold-data-import": "^0.1.0",
+                "spryker/sales-order-threshold-gui": "^1.6.0"
+            },
+            "suggest": {
+                "spryker-feature/cart": "Recommended feature dependency.",
+                "spryker-feature/checkout": "Recommended feature dependency.",
+                "spryker-feature/order-management": "Recommended feature dependency.",
+                "spryker-feature/prices": "Recommended feature dependency.",
+                "spryker-feature/spryker-core-e-commerce": "Recommended feature dependency."
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "202009.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Order Threshold [feature]",
+            "support": {
+                "source": "https://github.com/spryker-feature/order-threshold/tree/202009.0"
+            },
+            "time": "2020-09-02T09:34:29+00:00"
+        },
+        {
             "name": "spryker-feature/packaging-units",
             "version": "202307.0",
             "source": {
@@ -8128,16 +8172,16 @@
         },
         {
             "name": "spryker-shop/cart-page",
-            "version": "3.36.0",
+            "version": "3.37.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker-shop/cart-page.git",
-                "reference": "5daafd036a95b200d7d3abb22d8c6d2e770dedde"
+                "reference": "8fbc9ffdd5e753caf2c418f14ef3cd55875f3667"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker-shop/cart-page/zipball/5daafd036a95b200d7d3abb22d8c6d2e770dedde",
-                "reference": "5daafd036a95b200d7d3abb22d8c6d2e770dedde",
+                "url": "https://api.github.com/repos/spryker-shop/cart-page/zipball/8fbc9ffdd5e753caf2c418f14ef3cd55875f3667",
+                "reference": "8fbc9ffdd5e753caf2c418f14ef3cd55875f3667",
                 "shasum": ""
             },
             "require": {
@@ -8214,9 +8258,9 @@
             ],
             "description": "CartPage module",
             "support": {
-                "source": "https://github.com/spryker-shop/cart-page/tree/3.36.0"
+                "source": "https://github.com/spryker-shop/cart-page/tree/3.37.1"
             },
-            "time": "2023-03-22T09:04:54+00:00"
+            "time": "2023-08-10T07:40:00+00:00"
         },
         {
             "name": "spryker-shop/cart-page-extension",
@@ -14742,16 +14786,16 @@
         },
         {
             "name": "spryker-shop/shop-ui",
-            "version": "1.71.0",
+            "version": "1.72.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker-shop/shop-ui.git",
-                "reference": "688ca5a02955d6443dbf2a192f0c0d052c3c7298"
+                "reference": "f92002abf01dbb962bdb0bfc26d4cc9f92a7d632"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker-shop/shop-ui/zipball/688ca5a02955d6443dbf2a192f0c0d052c3c7298",
-                "reference": "688ca5a02955d6443dbf2a192f0c0d052c3c7298",
+                "url": "https://api.github.com/repos/spryker-shop/shop-ui/zipball/f92002abf01dbb962bdb0bfc26d4cc9f92a7d632",
+                "reference": "f92002abf01dbb962bdb0bfc26d4cc9f92a7d632",
                 "shasum": ""
             },
             "require": {
@@ -14799,9 +14843,9 @@
             ],
             "description": "ShopUi module",
             "support": {
-                "source": "https://github.com/spryker-shop/shop-ui/tree/1.71.0"
+                "source": "https://github.com/spryker-shop/shop-ui/tree/1.72.0"
             },
-            "time": "2023-07-03T12:28:35+00:00"
+            "time": "2023-07-28T12:49:00+00:00"
         },
         {
             "name": "spryker-shop/shopping-list-note-widget",
@@ -15744,16 +15788,16 @@
         },
         {
             "name": "spryker/application",
-            "version": "3.32.1",
+            "version": "3.32.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/application.git",
-                "reference": "86c27e0e946f0ffcd3bcc52a7f223dea8c30bfc8"
+                "reference": "823a7a6d2cb2da46c565feb7e97564fb28a7ebfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/application/zipball/86c27e0e946f0ffcd3bcc52a7f223dea8c30bfc8",
-                "reference": "86c27e0e946f0ffcd3bcc52a7f223dea8c30bfc8",
+                "url": "https://api.github.com/repos/spryker/application/zipball/823a7a6d2cb2da46c565feb7e97564fb28a7ebfd",
+                "reference": "823a7a6d2cb2da46c565feb7e97564fb28a7ebfd",
                 "shasum": ""
             },
             "require": {
@@ -15805,9 +15849,9 @@
             ],
             "description": "Application module",
             "support": {
-                "source": "https://github.com/spryker/application/tree/3.32.1"
+                "source": "https://github.com/spryker/application/tree/3.32.2"
             },
-            "time": "2023-06-30T14:52:52+00:00"
+            "time": "2023-07-27T15:38:05+00:00"
         },
         {
             "name": "spryker/application-extension",
@@ -26681,16 +26725,16 @@
         },
         {
             "name": "spryker/customer",
-            "version": "7.51.4",
+            "version": "7.51.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/customer.git",
-                "reference": "5986c56d94e35fa3b332a4dbb700efb4ef1f54f4"
+                "reference": "a2ade8879cae2b33b2094a4771d317086a6178b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/customer/zipball/5986c56d94e35fa3b332a4dbb700efb4ef1f54f4",
-                "reference": "5986c56d94e35fa3b332a4dbb700efb4ef1f54f4",
+                "url": "https://api.github.com/repos/spryker/customer/zipball/a2ade8879cae2b33b2094a4771d317086a6178b9",
+                "reference": "a2ade8879cae2b33b2094a4771d317086a6178b9",
                 "shasum": ""
             },
             "require": {
@@ -26757,9 +26801,9 @@
             ],
             "description": "Customer module",
             "support": {
-                "source": "https://github.com/spryker/customer/tree/7.51.4"
+                "source": "https://github.com/spryker/customer/tree/7.51.5"
             },
-            "time": "2023-07-12T07:56:12+00:00"
+            "time": "2023-08-03T15:55:31+00:00"
         },
         {
             "name": "spryker/customer-access",
@@ -30404,16 +30448,16 @@
         },
         {
             "name": "spryker/gui",
-            "version": "3.49.2",
+            "version": "3.50.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/gui.git",
-                "reference": "e9f0c145a7064d1bbdbf6ac89a7295b21bed3632"
+                "reference": "31d403d86a343055c908b5fe5723f8187eb05d56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/gui/zipball/e9f0c145a7064d1bbdbf6ac89a7295b21bed3632",
-                "reference": "e9f0c145a7064d1bbdbf6ac89a7295b21bed3632",
+                "url": "https://api.github.com/repos/spryker/gui/zipball/31d403d86a343055c908b5fe5723f8187eb05d56",
+                "reference": "31d403d86a343055c908b5fe5723f8187eb05d56",
                 "shasum": ""
             },
             "require": {
@@ -30462,9 +30506,9 @@
             ],
             "description": "Gui module",
             "support": {
-                "source": "https://github.com/spryker/gui/tree/3.49.2"
+                "source": "https://github.com/spryker/gui/tree/3.50.0"
             },
-            "time": "2023-04-06T07:25:58+00:00"
+            "time": "2023-08-01T16:18:08+00:00"
         },
         {
             "name": "spryker/guzzle",
@@ -32512,16 +32556,16 @@
         },
         {
             "name": "spryker/message-broker-extension",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/message-broker-extension.git",
-                "reference": "8360ac910ec5458e47ce4e3d6600073111d57298"
+                "reference": "c7fee41058388c635c07fd3787b451a2736340d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/message-broker-extension/zipball/8360ac910ec5458e47ce4e3d6600073111d57298",
-                "reference": "8360ac910ec5458e47ce4e3d6600073111d57298",
+                "url": "https://api.github.com/repos/spryker/message-broker-extension/zipball/c7fee41058388c635c07fd3787b451a2736340d1",
+                "reference": "c7fee41058388c635c07fd3787b451a2736340d1",
                 "shasum": ""
             },
             "require": {
@@ -32553,9 +32597,9 @@
             ],
             "description": "MessageBrokerExtension module",
             "support": {
-                "source": "https://github.com/spryker/message-broker-extension/tree/1.1.0"
+                "source": "https://github.com/spryker/message-broker-extension/tree/1.2.0"
             },
-            "time": "2022-12-23T11:50:03+00:00"
+            "time": "2023-07-21T13:09:09+00:00"
         },
         {
             "name": "spryker/messenger",
@@ -36688,16 +36732,16 @@
         },
         {
             "name": "spryker/product",
-            "version": "6.36.3",
+            "version": "6.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/product.git",
-                "reference": "a1c280f867e5e3f8844eb2e01d8dea9723fc8c01"
+                "reference": "4e4cb5700ec4340d9a3cc87c350fe4d40e044b33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/product/zipball/a1c280f867e5e3f8844eb2e01d8dea9723fc8c01",
-                "reference": "a1c280f867e5e3f8844eb2e01d8dea9723fc8c01",
+                "url": "https://api.github.com/repos/spryker/product/zipball/4e4cb5700ec4340d9a3cc87c350fe4d40e044b33",
+                "reference": "4e4cb5700ec4340d9a3cc87c350fe4d40e044b33",
                 "shasum": ""
             },
             "require": {
@@ -36747,9 +36791,9 @@
             ],
             "description": "Product module",
             "support": {
-                "source": "https://github.com/spryker/product/tree/6.36.3"
+                "source": "https://github.com/spryker/product/tree/6.37.0"
             },
-            "time": "2023-06-16T09:24:47+00:00"
+            "time": "2023-08-11T07:36:13+00:00"
         },
         {
             "name": "spryker/product-abstract-data-feed",
@@ -39748,16 +39792,16 @@
         },
         {
             "name": "spryker/product-image",
-            "version": "3.16.0",
+            "version": "3.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/product-image.git",
-                "reference": "768d310f354c7b3230f85aa9814c325dbb759b7d"
+                "reference": "ee8b04fd065a58fc74cd5bd0ed307ee50810f8c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/product-image/zipball/768d310f354c7b3230f85aa9814c325dbb759b7d",
-                "reference": "768d310f354c7b3230f85aa9814c325dbb759b7d",
+                "url": "https://api.github.com/repos/spryker/product-image/zipball/ee8b04fd065a58fc74cd5bd0ed307ee50810f8c3",
+                "reference": "ee8b04fd065a58fc74cd5bd0ed307ee50810f8c3",
                 "shasum": ""
             },
             "require": {
@@ -39795,9 +39839,9 @@
             ],
             "description": "ProductImage module",
             "support": {
-                "source": "https://github.com/spryker/product-image/tree/3.16.0"
+                "source": "https://github.com/spryker/product-image/tree/3.17.0"
             },
-            "time": "2023-04-17T15:49:27+00:00"
+            "time": "2023-07-17T12:04:54+00:00"
         },
         {
             "name": "spryker/product-image-cart-connector",
@@ -48921,16 +48965,16 @@
         },
         {
             "name": "spryker/shipment",
-            "version": "8.15.2",
+            "version": "8.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/shipment.git",
-                "reference": "f36ddcbe915591f59a041efac02d12842b7a974e"
+                "reference": "5a57b54497f023d81f72916a2ec9e09b88f1541c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/shipment/zipball/f36ddcbe915591f59a041efac02d12842b7a974e",
-                "reference": "f36ddcbe915591f59a041efac02d12842b7a974e",
+                "url": "https://api.github.com/repos/spryker/shipment/zipball/5a57b54497f023d81f72916a2ec9e09b88f1541c",
+                "reference": "5a57b54497f023d81f72916a2ec9e09b88f1541c",
                 "shasum": ""
             },
             "require": {
@@ -48949,7 +48993,7 @@
                 "spryker/sales": "^11.25.0",
                 "spryker/sales-extension": "^1.6.0",
                 "spryker/session": "^3.0.0 || ^4.0.0",
-                "spryker/shipment-extension": "^1.1.0",
+                "spryker/shipment-extension": "^1.2.0",
                 "spryker/store": "^1.4.0",
                 "spryker/symfony": "^3.0.0",
                 "spryker/tax": "^5.0.0",
@@ -48987,9 +49031,9 @@
             ],
             "description": "Shipment module",
             "support": {
-                "source": "https://github.com/spryker/shipment/tree/8.15.2"
+                "source": "https://github.com/spryker/shipment/tree/8.16.0"
             },
-            "time": "2023-06-06T15:14:45+00:00"
+            "time": "2023-08-01T09:25:56+00:00"
         },
         {
             "name": "spryker/shipment-cart-connector",
@@ -49193,20 +49237,21 @@
         },
         {
             "name": "spryker/shipment-extension",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/shipment-extension.git",
-                "reference": "617c4a5fc41fc141f368e7133aab7e0cc8464b4a"
+                "reference": "60944ddd7eb0cb42da0e37ff3953590353434ba3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/shipment-extension/zipball/617c4a5fc41fc141f368e7133aab7e0cc8464b4a",
-                "reference": "617c4a5fc41fc141f368e7133aab7e0cc8464b4a",
+                "url": "https://api.github.com/repos/spryker/shipment-extension/zipball/60944ddd7eb0cb42da0e37ff3953590353434ba3",
+                "reference": "60944ddd7eb0cb42da0e37ff3953590353434ba3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2"
+                "php": ">=8.0",
+                "spryker/transfer": "^3.27.0"
             },
             "require-dev": {
                 "spryker/code-sniffer": "*"
@@ -49228,9 +49273,9 @@
             ],
             "description": "ShipmentExtension module",
             "support": {
-                "source": "https://github.com/spryker/shipment-extension/tree/master"
+                "source": "https://github.com/spryker/shipment-extension/tree/1.2.0"
             },
-            "time": "2020-03-11T14:56:31+00:00"
+            "time": "2023-08-01T09:25:56+00:00"
         },
         {
             "name": "spryker/shipment-gui",
@@ -50303,16 +50348,16 @@
         },
         {
             "name": "spryker/stock",
-            "version": "8.8.2",
+            "version": "8.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/stock.git",
-                "reference": "7255d93e4ec1f640bd3d3d8f16e7baaf02c236f8"
+                "reference": "5261ab0f27009e6e3bae8d9edc44b83f52353138"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/stock/zipball/7255d93e4ec1f640bd3d3d8f16e7baaf02c236f8",
-                "reference": "7255d93e4ec1f640bd3d3d8f16e7baaf02c236f8",
+                "url": "https://api.github.com/repos/spryker/stock/zipball/5261ab0f27009e6e3bae8d9edc44b83f52353138",
+                "reference": "5261ab0f27009e6e3bae8d9edc44b83f52353138",
                 "shasum": ""
             },
             "require": {
@@ -50351,9 +50396,9 @@
             ],
             "description": "Stock module",
             "support": {
-                "source": "https://github.com/spryker/stock/tree/8.8.2"
+                "source": "https://github.com/spryker/stock/tree/8.8.3"
             },
-            "time": "2023-05-05T18:20:59+00:00"
+            "time": "2023-07-25T12:51:44+00:00"
         },
         {
             "name": "spryker/stock-address",
@@ -50589,16 +50634,16 @@
         },
         {
             "name": "spryker/storage",
-            "version": "3.20.1",
+            "version": "3.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/storage.git",
-                "reference": "e18aa318532a53831a66ff406ba4529119091b01"
+                "reference": "826ba5c9c4b26b2d3dbf2c9791975ee3857f04f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/storage/zipball/e18aa318532a53831a66ff406ba4529119091b01",
-                "reference": "e18aa318532a53831a66ff406ba4529119091b01",
+                "url": "https://api.github.com/repos/spryker/storage/zipball/826ba5c9c4b26b2d3dbf2c9791975ee3857f04f2",
+                "reference": "826ba5c9c4b26b2d3dbf2c9791975ee3857f04f2",
                 "shasum": ""
             },
             "require": {
@@ -50649,9 +50694,9 @@
             ],
             "description": "Storage module",
             "support": {
-                "source": "https://github.com/spryker/storage/tree/3.20.1"
+                "source": "https://github.com/spryker/storage/tree/3.21.0"
             },
-            "time": "2023-07-12T09:45:07+00:00"
+            "time": "2023-07-24T13:36:15+00:00"
         },
         {
             "name": "spryker/storage-database",
@@ -50886,16 +50931,16 @@
         },
         {
             "name": "spryker/store",
-            "version": "1.20.0",
+            "version": "1.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/store.git",
-                "reference": "a9996e7c6f5c6ee5b63382bbe5d26de91a6ccb8c"
+                "reference": "b8f1d7c27a1f6cb41ad693bbae71f79bc58fde3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/store/zipball/a9996e7c6f5c6ee5b63382bbe5d26de91a6ccb8c",
-                "reference": "a9996e7c6f5c6ee5b63382bbe5d26de91a6ccb8c",
+                "url": "https://api.github.com/repos/spryker/store/zipball/b8f1d7c27a1f6cb41ad693bbae71f79bc58fde3f",
+                "reference": "b8f1d7c27a1f6cb41ad693bbae71f79bc58fde3f",
                 "shasum": ""
             },
             "require": {
@@ -50911,6 +50956,7 @@
                 "spryker/store-extension": "^1.0.0",
                 "spryker/symfony": "^3.0.0",
                 "spryker/transfer": "^3.25.0",
+                "spryker/zed-request": "^3.3.0",
                 "spryker/zed-request-extension": "^1.1.0"
             },
             "require-dev": {
@@ -50944,9 +50990,9 @@
             ],
             "description": "Store module",
             "support": {
-                "source": "https://github.com/spryker/store/tree/1.20.0"
+                "source": "https://github.com/spryker/store/tree/1.22.0"
             },
-            "time": "2023-05-22T19:10:17+00:00"
+            "time": "2023-08-11T07:36:13+00:00"
         },
         {
             "name": "spryker/store-context-gui",
@@ -52088,16 +52134,16 @@
         },
         {
             "name": "spryker/twig",
-            "version": "3.18.1",
+            "version": "3.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/twig.git",
-                "reference": "07aa6395bd84fd14567c15a3f8c77a55bff0268a"
+                "reference": "7a44c1b4614fb2ed9e3dc9e30fab4d733ad797ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/twig/zipball/07aa6395bd84fd14567c15a3f8c77a55bff0268a",
-                "reference": "07aa6395bd84fd14567c15a3f8c77a55bff0268a",
+                "url": "https://api.github.com/repos/spryker/twig/zipball/7a44c1b4614fb2ed9e3dc9e30fab4d733ad797ce",
+                "reference": "7a44c1b4614fb2ed9e3dc9e30fab4d733ad797ce",
                 "shasum": ""
             },
             "require": {
@@ -52142,9 +52188,9 @@
             ],
             "description": "Twig module",
             "support": {
-                "source": "https://github.com/spryker/twig/tree/3.18.1"
+                "source": "https://github.com/spryker/twig/tree/3.18.2"
             },
-            "time": "2023-03-31T19:36:11+00:00"
+            "time": "2023-07-27T15:38:05+00:00"
         },
         {
             "name": "spryker/twig-extension",
@@ -52908,16 +52954,16 @@
         },
         {
             "name": "spryker/util-date-time",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/util-date-time.git",
-                "reference": "1dc77bf90621976dfb0858f1baf420459ccbfac1"
+                "reference": "01a1c0ca748c9d04faaa2dc404a2232132157962"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/util-date-time/zipball/1dc77bf90621976dfb0858f1baf420459ccbfac1",
-                "reference": "1dc77bf90621976dfb0858f1baf420459ccbfac1",
+                "url": "https://api.github.com/repos/spryker/util-date-time/zipball/01a1c0ca748c9d04faaa2dc404a2232132157962",
+                "reference": "01a1c0ca748c9d04faaa2dc404a2232132157962",
                 "shasum": ""
             },
             "require": {
@@ -52953,9 +52999,9 @@
             ],
             "description": "UtilDateTime module",
             "support": {
-                "source": "https://github.com/spryker/util-date-time/tree/1.4.0"
+                "source": "https://github.com/spryker/util-date-time/tree/1.4.1"
             },
-            "time": "2023-03-31T19:36:11+00:00"
+            "time": "2023-07-27T15:38:05+00:00"
         },
         {
             "name": "spryker/util-encoding",
@@ -58010,20 +58056,21 @@
         },
         {
             "name": "symfony/security-guard",
-            "version": "v5.4.22",
+            "version": "v5.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-guard.git",
-                "reference": "62d064b1ee682e4617f4c5ddc0d31f73e1a7ecaa"
+                "reference": "72c53142533462fc6fda4a429c2a21c2b944a8cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-guard/zipball/62d064b1ee682e4617f4c5ddc0d31f73e1a7ecaa",
-                "reference": "62d064b1ee682e4617f4c5ddc0d31f73e1a7ecaa",
+                "url": "https://api.github.com/repos/symfony/security-guard/zipball/72c53142533462fc6fda4a429c2a21c2b944a8cc",
+                "reference": "72c53142533462fc6fda4a429c2a21c2b944a8cc",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
+                "symfony/deprecation-contracts": "^2.1|^3",
                 "symfony/polyfill-php80": "^1.15",
                 "symfony/security-core": "^5.0",
                 "symfony/security-http": "^5.3"
@@ -58057,7 +58104,7 @@
             "description": "Symfony Security Component - Guard",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/security-guard/tree/v5.4.22"
+                "source": "https://github.com/symfony/security-guard/tree/v5.4.27"
             },
             "funding": [
                 {
@@ -58073,20 +58120,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-06T21:29:33+00:00"
+            "time": "2023-07-28T14:44:35+00:00"
         },
         {
             "name": "symfony/security-http",
-            "version": "v5.4.23",
+            "version": "v5.4.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security-http.git",
-                "reference": "6791856229cc605834d169091981e4eae77dad45"
+                "reference": "9291eec227de5179eb0a1b60cc6265ee6f987b4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security-http/zipball/6791856229cc605834d169091981e4eae77dad45",
-                "reference": "6791856229cc605834d169091981e4eae77dad45",
+                "url": "https://api.github.com/repos/symfony/security-http/zipball/9291eec227de5179eb0a1b60cc6265ee6f987b4a",
+                "reference": "9291eec227de5179eb0a1b60cc6265ee6f987b4a",
                 "shasum": ""
             },
             "require": {
@@ -58142,7 +58189,7 @@
             "description": "Symfony Security Component - HTTP Integration",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/security-http/tree/v5.4.23"
+                "source": "https://github.com/symfony/security-http/tree/v5.4.26"
             },
             "funding": [
                 {
@@ -58158,7 +58205,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-04-21T11:34:27+00:00"
+            "time": "2023-07-13T14:03:15+00:00"
         },
         {
             "name": "symfony/serializer",
@@ -59202,16 +59249,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v3.6.1",
+            "version": "v3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "7e7d5839d4bec168dfeef0ac66d5c5a2edbabffd"
+                "reference": "5cf942bbab3df42afa918caeba947f1b690af64b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7e7d5839d4bec168dfeef0ac66d5c5a2edbabffd",
-                "reference": "7e7d5839d4bec168dfeef0ac66d5c5a2edbabffd",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/5cf942bbab3df42afa918caeba947f1b690af64b",
+                "reference": "5cf942bbab3df42afa918caeba947f1b690af64b",
                 "shasum": ""
             },
             "require": {
@@ -59257,7 +59304,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v3.6.1"
+                "source": "https://github.com/twigphp/Twig/tree/v3.7.0"
             },
             "funding": [
                 {
@@ -59269,7 +59316,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-08T12:52:13+00:00"
+            "time": "2023-07-26T07:16:09+00:00"
         },
         {
             "name": "voku/anti-xss",
@@ -62307,16 +62354,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.22.1",
+            "version": "1.23.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "65c39594fbd8c67abfc68bb323f86447bab79cc0"
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/65c39594fbd8c67abfc68bb323f86447bab79cc0",
-                "reference": "65c39594fbd8c67abfc68bb323f86447bab79cc0",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/846ae76eef31c6d7790fac9bc399ecee45160b26",
+                "reference": "846ae76eef31c6d7790fac9bc399ecee45160b26",
                 "shasum": ""
             },
             "require": {
@@ -62348,9 +62395,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.22.1"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.23.1"
             },
-            "time": "2023-06-29T20:46:06+00:00"
+            "time": "2023-08-03T16:32:59+00:00"
         },
         {
             "name": "phpstan/phpstan",

@@ -366,6 +366,7 @@ class DataImportDependencyProvider extends SprykerDataImportDependencyProvider
             new ContentNavigationDataImportPlugin(),
             new CategoryStoreDataImportPlugin(),
             new ProductConfigurationDataImportPlugin(),
+            new SalesOrderThresholdDataImportPlugin(),
         ];
     }
 
