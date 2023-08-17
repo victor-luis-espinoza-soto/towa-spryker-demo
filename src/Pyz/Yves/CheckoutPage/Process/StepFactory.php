@@ -30,10 +30,10 @@ class StepFactory extends SprykerShopStepFactory
         $stepCollection
             ->addStep($this->createEntryStep())
             ->addStep($this->createCustomerStep())
+            ->addStep($this->createOrderNameStep())
             ->addStep($this->createAddressStep())
             ->addStep($this->createShipmentStep())
             ->addStep($this->createPaymentStep())
-            ->addStep($this->createOrderNameStep())
             ->addStep($this->createSummaryStep())
             ->addStep($this->createPlaceOrderStep())
             ->addStep($this->createSuccessStep());

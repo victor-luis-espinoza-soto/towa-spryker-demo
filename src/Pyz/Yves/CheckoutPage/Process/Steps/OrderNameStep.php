@@ -44,17 +44,17 @@ class OrderNameStep extends AbstractBaseStep implements StepWithBreadcrumbInterf
 
     /**
      * @param Request $request
-     * @param QuoteTransfer|AbstractTransfer|QuoteTransfer $quoteTransfer
+     * @param AbstractTransfer $quoteTransfer
      *
-     * @return QuoteTransfer
+     * @return QuoteTransfer|AbstractTransfer
      */
-    public function execute(Request $request, AbstractTransfer $quoteTransfer)
+    public function execute(Request $request, AbstractTransfer $quoteTransfer): QuoteTransfer|AbstractTransfer
     {
         return $quoteTransfer;
     }
 
     /**
-     * @param AbstractTransfer|QuoteTransfer $quoteTransfer
+     * @param AbstractTransfer $quoteTransfer
      *
      * @return bool
      */
@@ -68,7 +68,7 @@ class OrderNameStep extends AbstractBaseStep implements StepWithBreadcrumbInterf
      */
     public function getBreadcrumbItemTitle(): string
     {
-        return 'Order Name';
+        return 'Name';
     }
 
     /**
