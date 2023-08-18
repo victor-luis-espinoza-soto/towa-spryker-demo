@@ -7,4 +7,8 @@
         <property name="orderName" type="string"/>
     </transfer>
 
+    <transfer name="Totals">
+        <property name="orderName" type="string"/>
+    </transfer>
+
 </transfers>
