@@ -1,0 +1,26 @@
+{% extends template('page-layout-checkout', '@SprykerShop:CheckoutPage') %}
+
+{% define data = {
+    stepNumder: 1,
+} %}
+
+{% block content %}
+    {% embed molecule('form') with {
+        modifiers: ['checkout-form'],
+        data: {
+            options: {
+                attr: {
+                    id: 'order-name-form'
+                }
+            },
+            submit: {
+                enable: true,
+                text: 'checkout.step.address' | trans
+            },
+        },
+    } only %}
+        {% block fields %}
+
+        {% endblock %}
+    {% endembed %}
+{% endblock %}

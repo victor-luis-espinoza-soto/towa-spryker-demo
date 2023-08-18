@@ -216,10 +216,25 @@ class CheckoutController extends SprykerCheckoutController
     /**
      * @param Request $request
      *
-     * @return string
+     * @return RedirectResponse|View
      */
-    public function orderNameAction(Request $request): string
+    public function orderNameAction(Request $request): RedirectResponse|View
     {
-        return 'Hello Order Name Step';
+        $response = $this->getFactory()->createCheckoutProcess()->process(
+            $request,
+            $this->getFactory()
+                ->createPyzCheckoutFormFactory()
+                ->createOrderNameFormCollection()
+        );
+
+        if (!is_array($response)) {
+            return $response;
+        }
+
+        return $this->view(
+            $response,
+            $this->getFactory()->getCustomerPageWidgetPlugins(),
+            '@CheckoutPage/views/orderName/order_name.twig'
+        );
     }
 }

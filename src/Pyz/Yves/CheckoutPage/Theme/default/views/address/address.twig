@@ -1,7 +1,7 @@
 {% extends view('address', '@SprykerShop:CheckoutPage') %}
 
 {% define data = {
-    stepNumder: 1,
+    stepNumder: 2,
 } %}
 
 {% block containerClass %}container--medium{% endblock %}
@@ -33,6 +33,13 @@
                 text: 'checkout.step.shipment' | trans,
                 class: 'button button--big spacing-top spacing-top--big ' ~ jsAddressClass ~ '__form-submit',
             },
+            cancel: {
+                enable: true,
+                url: data.backUrl,
+                text: 'general.back.button' | trans,
+                icon: '',
+                class: 'form__action--expand-sm-md button button--big button--hollow-icon button--back',
+            }
         },
         embed: {
             forms: {

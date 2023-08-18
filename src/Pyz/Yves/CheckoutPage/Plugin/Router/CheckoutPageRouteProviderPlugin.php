@@ -30,9 +30,7 @@ class CheckoutPageRouteProviderPlugin extends SprykerShopCheckoutPageRouteProvid
         $routeCollection = $this->addCheckoutSummaryStepRoute($routeCollection);
         $routeCollection = $this->addPlaceOrderStepRoute($routeCollection);
         $routeCollection = $this->addCheckoutErrorRoute($routeCollection);
-        $routeCollection = $this->addCheckoutSuccessRoute($routeCollection);
-
-        return $routeCollection;
+        return $this->addCheckoutSuccessRoute($routeCollection);
     }
 
     /**
