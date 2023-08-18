@@ -9,21 +9,25 @@ namespace Pyz\Yves\CheckoutPage\Controller;
 
 use ArrayObject;
 use Generated\Shared\Transfer\QuoteValidationResponseTransfer;
+use Pyz\Yves\CheckoutPage\CheckoutPageFactory;
+use Spryker\Client\Checkout\CheckoutClientInterface;
+use Spryker\Yves\Kernel\View\View;
 use SprykerShop\Yves\CheckoutPage\Controller\CheckoutController as SprykerCheckoutController;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
- * @method \Pyz\Yves\CheckoutPage\CheckoutPageFactory getFactory()
- * @method \Spryker\Client\Checkout\CheckoutClientInterface getClient()
+ * @method CheckoutPageFactory getFactory()
+ * @method CheckoutClientInterface getClient()
  */
 class CheckoutController extends SprykerCheckoutController
 {
     /**
-     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param Request $request
      *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Spryker\Yves\Kernel\View\View
+     * @return RedirectResponse|View
      */
-    public function customerAction(Request $request)
+    public function customerAction(Request $request): RedirectResponse|View
     {
         $quoteValidationResponseTransfer = $this->canPyzProceedCheckout();
 
@@ -52,9 +56,9 @@ class CheckoutController extends SprykerCheckoutController
     }
 
     /**
-     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param Request $request
      *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Spryker\Yves\Kernel\View\View
+     * @return RedirectResponse|View
      */
     public function addressAction(Request $request)
     {
@@ -85,9 +89,9 @@ class CheckoutController extends SprykerCheckoutController
     }
 
     /**
-     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param Request $request
      *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Spryker\Yves\Kernel\View\View
+     * @return RedirectResponse|View
      */
     public function shipmentAction(Request $request)
     {
@@ -118,9 +122,9 @@ class CheckoutController extends SprykerCheckoutController
     }
 
     /**
-     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param Request $request
      *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Spryker\Yves\Kernel\View\View
+     * @return RedirectResponse|View
      */
     public function paymentAction(Request $request)
     {
@@ -151,9 +155,9 @@ class CheckoutController extends SprykerCheckoutController
     }
 
     /**
-     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param Request $request
      *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Spryker\Yves\Kernel\View\View
+     * @return RedirectResponse|View
      */
     public function summaryAction(Request $request)
     {
@@ -207,5 +211,44 @@ class CheckoutController extends SprykerCheckoutController
         foreach ($messageTransfers as $messageTransfer) {
             $this->addErrorMessage($messageTransfer->getValue());
         }
+    }
+
+    /**
+     * @param Request $request
+     *
+     * @return RedirectResponse|View
+     */
+    public function orderNameAction(Request $request): RedirectResponse|View
+    {
+        $quoteValidationResponseTransfer = $this->canPyzProceedCheckout();
+
+        if (!$quoteValidationResponseTransfer->getIsSuccessful()) {
+            $this->processPyzErrorMessages($quoteValidationResponseTransfer->getMessages());
+
+            return $this->redirectResponseInternal(static::ROUTE_CART);
+        }
+
+//        $response = $this->getFactory()->createCheckoutProcess()->process(
+//            $request,
+//            $this->getFactory()
+//                ->createPyzCheckoutFormFactory()
+//                ->createOrderNameFormCollection()
+//        );
+        $response = $this->createStepProcess()->process(
+            $request,
+            $this->getFactory()
+                ->createCheckoutFormFactory()
+                ->createOrderNameFormCollection()
+        );
+
+        if (!is_array($response)) {
+            return $response;
+        }
+
+        return $this->view(
+            $response,
+            $this->getFactory()->getCustomerPageWidgetPlugins(),
+            '@CheckoutPage/views/orderName/order_name.twig'
+        );
     }
 }
