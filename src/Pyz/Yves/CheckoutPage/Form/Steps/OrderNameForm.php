@@ -35,7 +35,7 @@ class OrderNameForm extends AbstractType
             'constraints' => [
                 new NotBlank(),
                 new Regex([
-                    'pattern' => '^[a-zA-Z0-9]+$',
+                    'pattern' => '/[a-z0-9]+/',
                     'match' => true,
                     'message' => 'You must use only characters from a-z and numbers from 0-9',
                 ]),

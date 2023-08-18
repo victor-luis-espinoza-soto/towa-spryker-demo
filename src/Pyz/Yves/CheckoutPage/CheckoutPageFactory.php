@@ -21,8 +21,19 @@ class CheckoutPageFactory extends SprykerShopCheckoutPageFactory
         return new FormFactory();
     }
 
+    /**
+     * @return StepFactory
+     */
     public function createStepFactory(): StepFactory
     {
         return new StepFactory();
+    }
+
+    /**
+     * @return FormFactory
+     */
+    public function createCheckoutFormFactory(): FormFactory
+    {
+        return new FormFactory();
     }
 }

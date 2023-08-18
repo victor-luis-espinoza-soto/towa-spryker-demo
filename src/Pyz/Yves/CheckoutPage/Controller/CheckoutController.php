@@ -220,10 +220,24 @@ class CheckoutController extends SprykerCheckoutController
      */
     public function orderNameAction(Request $request): RedirectResponse|View
     {
-        $response = $this->getFactory()->createCheckoutProcess()->process(
+        $quoteValidationResponseTransfer = $this->canPyzProceedCheckout();
+
+        if (!$quoteValidationResponseTransfer->getIsSuccessful()) {
+            $this->processPyzErrorMessages($quoteValidationResponseTransfer->getMessages());
+
+            return $this->redirectResponseInternal(static::ROUTE_CART);
+        }
+
+//        $response = $this->getFactory()->createCheckoutProcess()->process(
+//            $request,
+//            $this->getFactory()
+//                ->createPyzCheckoutFormFactory()
+//                ->createOrderNameFormCollection()
+//        );
+        $response = $this->createStepProcess()->process(
             $request,
             $this->getFactory()
-                ->createPyzCheckoutFormFactory()
+                ->createCheckoutFormFactory()
                 ->createOrderNameFormCollection()
         );
 

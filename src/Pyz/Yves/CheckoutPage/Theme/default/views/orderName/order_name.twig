@@ -2,12 +2,22 @@
 
 {% define data = {
     stepNumder: 1,
+    backUrl: _view.previousStepUrl,
+    forms: {
+        orderName: _view.orderNameForm
+    },
+    title: ''
 } %}
 
+{% block containerClass %}container--medium{% endblock %}
+
 {% block content %}
+    <h5 class="title title--second">{{ 'page.checkout.order-name.title' | trans }}</h5>
+
     {% embed molecule('form') with {
         modifiers: ['checkout-form'],
         data: {
+            form: data.forms.orderName,
             options: {
                 attr: {
                     id: 'order-name-form'
@@ -15,8 +25,15 @@
             },
             submit: {
                 enable: true,
-                text: 'checkout.step.address' | trans
+                text: 'checkout.step.address' | trans,
+                class: 'form__action--expand-sm-md button button--big',
             },
+            cancel: {
+                enable: true,
+                url: data.backUrl,
+                text: 'general.back.button' | trans,
+                class: 'form__action--expand-sm-md button button--big button--hollow-icon button--back',
+            }
         },
     } only %}
         {% block fields %}
