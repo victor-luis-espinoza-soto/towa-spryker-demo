@@ -100,6 +100,7 @@
                     {% if isSearchItemsVisible %}
                         <th>{{ 'customer.order.number_of_items' | trans }}</th>
                     {% endif %}
+                    <th>{{ 'customer.order.orderName' | trans }}</th>
                     <th>{{ 'customer.order.total' | trans }}</th>
                     <th>{{ 'customer.order.items_state' | trans }}</th>
                     <th>{{ 'customer.table.actions' | trans }}</th>
@@ -130,6 +131,11 @@
                                 </span>
                             </td>
                         {% endif %}
+                        <td class="transform-cell spacing-bottom spacing-bottom--inner spacing-bottom--big" data-content="{{ 'customer.order.total' | trans }}">
+                            <strong>
+                                {{- order.totals.orderName -}}
+                            </strong>
+                        </td>
                         <td class="transform-cell spacing-bottom spacing-bottom--inner spacing-bottom--big" data-content="{{ 'customer.order.total' | trans }}">
                             <strong>
                                 {{- order.totals.grandTotal | default(0) | money(true, order.currencyIsoCode) -}}
